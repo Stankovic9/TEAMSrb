@@ -16,7 +16,15 @@ public class FBudget{
         System.out.println("Who are you?");
         temp = scan.nextLine();
 
-        System.out.println(temp);
+        if(temp.equals(andy.getName())){
+            System.out.println("HI ANDY");
+        }
+        else{
+            System.out.println("No andy");
+        }
+
+//        System.out.println(temp);
+
     }
     
 }
