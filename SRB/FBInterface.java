@@ -1,10 +1,10 @@
 public interface FBInterface {
 
-    public void add();
+    public void add(int value);
 
-    public void withdraw();
+    public void withdraw(int value);
 
-    public void checkBalance();
+   // public void checkBalance();
 
     public void clear();
     
