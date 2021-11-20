@@ -29,7 +29,7 @@ public class FBudget{
         if(temp1.equals(andy.getName())){
             System.out.println("----------------------------------------------------------");
             System.out.println(andy);
-            System.out.println("What do you want to do Andy? ADD, WITHDRAW, CLEAR ");
+            System.out.println("What do you want to do Andy? ADD, WITHDRAW, CLEAR, GO BACK ");
             temp2 = scan.nextLine();
             if(temp2.equals("ADD")){
                 System.out.print("How much do you want to add? ");
@@ -46,13 +46,17 @@ public class FBudget{
             }
             else if(temp2.equals("CLEAR")){
                 andy.clear();
-                System.out.println(andy);
+                System.out.println(andy);   
             }
+            else if(temp2.equals("GO BACK")){
+                
+            }
+               
         }
         else if(temp1.equals(anna.getName())){
             System.out.println("----------------------------------------------------------");
             System.out.println(anna);
-            System.out.println("What do you want to do Anna? ADD, WITHDRAW, CLEAR ");
+            System.out.println("What do you want to do Anna? ADD, WITHDRAW, CLEAR, GO BACK ");
             temp2 = scan.nextLine();
             if(temp2.equals("ADD")){
                 System.out.print("How much do you want to add? ");
@@ -71,11 +75,14 @@ public class FBudget{
                 anna.clear();
                 System.out.println(anna);
             }
+            else if(temp2.equals("GO BACK")){
+                
+            }
         }
         else if(temp1.equals(vlad.getName())){
             System.out.println("----------------------------------------------------------");
             System.out.println(vlad);
-            System.out.println("What do you want to do Vlad? ADD, WITHDRAW, CLEAR ");
+            System.out.println("What do you want to do Vlad? ADD, WITHDRAW, CLEAR, GO BACK ");
             temp2 = scan.nextLine();
             if(temp2.equals("ADD")){
                 System.out.print("How much do you want to add? ");
@@ -93,6 +100,9 @@ public class FBudget{
             else if(temp2.equals("CLEAR")){
                 vlad.clear();
                 System.out.println(vlad);
+            }
+            else if(temp2.equals("GO BACK")){
+                
             }
         }
         else{
