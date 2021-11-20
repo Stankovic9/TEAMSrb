@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements FBInterface{
 
     private String position;
     private String name;
@@ -39,6 +39,31 @@ public class Person {
     public String getPosition(){
         return position;
     }
+
+    public String toString(){
+        String str = "";
+        str += position;
+        str += ", ";
+        str += name;
+        str += ", ";
+        str += balance;
+        return str;
+    }
+    public void add(int value){
+        balance += value;
+    }
+
+    public void withdraw(int value){
+        balance -= value;
+    }
+
+   // public void checkBalance();
+
+    public void clear(){
+        balance = 0;
+    }
+    
+
 }
 
 
