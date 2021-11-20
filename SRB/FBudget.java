@@ -51,6 +51,9 @@ public class FBudget{
             else if(temp2.equals("GO BACK")){
                 
             }
+            else{
+                System.out.println("This function does not exist. ");
+            }
                
         }
         else if(temp1.equals(anna.getName())){
@@ -78,6 +81,9 @@ public class FBudget{
             else if(temp2.equals("GO BACK")){
                 
             }
+            else{
+                System.out.println("This function does not exist. ");
+            }
         }
         else if(temp1.equals(vlad.getName())){
             System.out.println("----------------------------------------------------------");
@@ -103,6 +109,9 @@ public class FBudget{
             }
             else if(temp2.equals("GO BACK")){
                 
+            }
+            else{
+                System.out.println("This function does not exist. ");
             }
         }
         else{
