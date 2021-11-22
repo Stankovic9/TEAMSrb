@@ -3,8 +3,7 @@ import java.util.*;
 public class fbudget2 {
         static String temp1;
         static String temp2;
-        static String temp3;
-        static int temp4;
+        
 
         static Person andy = new Person("Son", "Andy", 2000);
         static Person anna = new Person("Mother", "Anna", 5000);
@@ -28,7 +27,7 @@ public class fbudget2 {
         System.out.println("----------------------------------------------------------");
 
         // SCANNING WHICH MEMBER YOU WANT TO USE 
-        System.out.print("Who are you? ");
+        System.out.println("Who are you? ");
         temp1 = scan.nextLine();
         if (temp1.equals(andy.getName())){
             f = 0;
@@ -60,6 +59,9 @@ public class fbudget2 {
 }
 public static void run(Person andy, Person anna, Person vlad){
 
+    temp1 = "";
+    temp2 = "";
+
 
     //PRINTING OUT FAMILY MEMBERS ACCOUNTS
     System.out.println("Family member #1: " + andy);
@@ -68,8 +70,11 @@ public static void run(Person andy, Person anna, Person vlad){
     System.out.println("----------------------------------------------------------");
 
     // SCANNING WHICH MEMBER YOU WANT TO USE 
-    System.out.print("Who are you? ");
+    System.out.println("Who are you? ");
+    String temporary = scan.nextLine();
+    System.out.print(temporary);
     temp1 = scan.nextLine();
+
     if (temp1.equals(andy.getName())){
         f = 0;
     } else if (temp1.equals(anna.getName())){
