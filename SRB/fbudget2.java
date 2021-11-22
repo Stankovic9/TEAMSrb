@@ -78,6 +78,7 @@ public static void run(Person andy, Person anna, Person vlad){
         f = 2;
     } else {
         System.out.println("Didn't choose the right name.");
+        run(andy,anna,vlad);
     }
 
     chooseName(family[f]);
@@ -92,7 +93,9 @@ public static void run(Person andy, Person anna, Person vlad){
         clear(family[f]);
     } else {
         System.out.println("You didn't choose an action");
-    }       
+        run(andy,anna,vlad);
+    }
+    run(andy,anna,vlad);
         
 }
 
