@@ -62,8 +62,6 @@ public class Person implements FBInterface{
     public void clear(){
         balance = 0;
     }
-    
-
 }
 
 

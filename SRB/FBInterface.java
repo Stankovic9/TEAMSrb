@@ -7,7 +7,4 @@ public interface FBInterface {
    // public void checkBalance();
 
     public void clear();
-    
-
-    
 }
