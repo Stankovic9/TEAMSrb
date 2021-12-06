@@ -53,7 +53,7 @@ public class fbudget2 {
 					bSelectedPerson = false;
 				}
 			}
-
+			
 			boolean bGoBackSelected = false;
 			boolean bSelectedAction = false;
 			while ( !bSelectedAction ) {
@@ -86,10 +86,8 @@ public class fbudget2 {
 					System.out.println("You didn't choose an action");
 				}
 			}
-
 			if ( bGoBackSelected )
 				continue;
-
 			// print new balance
 			System.out.println("");
 			System.out.println("New balance is " + personSelected);
@@ -107,8 +105,14 @@ public class fbudget2 {
 	private static void withdraw(Person person) {
 		System.out.println("How much would you like to withdraw?");
 		int money = scan.nextInt();
-		person.withdraw(money);
-		scan.nextLine();
+		String answer = "";
+		if (money < person.getBalance()){
+			person.withdraw(money);
+			scan.nextLine();		
+		} else {
+			System.out.println("You dont have that much money on your account.");
+			scan.nextLine();	
+		}		
 	}
 
 	private static void clear(Person person) {
